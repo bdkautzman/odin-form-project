@@ -1,3 +1,203 @@
-div {
-    color: aqua;
+/*** Reset ***/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*** Colors ***/
+:root {
+    --green: rgb(29, 117, 29); 
+}
+
+/*** Fonts ***/
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;        
+}
+
+img {
+    width: 100px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-family: norsebold;
+    font-size: 54px;
+}
+
+.logo {
+    height: 175px;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 175px;
+    width: 100%;
+    min-width: 250px;
+}
+
+.photocred {
+    margin-top: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration-color: white;
+    color: white;
+}
+
+.sidebar {
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+}
+
+.content {
+    flex: 2;
+    background-color: rgb(231, 226, 218);
+    height: 100vh;
+}
+
+.intropara,
+legend {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.intropara{
+    margin: 150px 250px 30px 50px;
+}
+
+legend{
+    padding: 10px 0px 10px 30px;
+}
+
+em {
+    font-style: italic;
+}
+
+.login {
+    text-decoration: none;
+    color: var(--green);
+}
+
+button {
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: var(--green);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
+}
+
+.account {
+    margin: 30px;
+}
+
+form {
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+input {
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: 23px;
+    font-size: 14px;
+    margin-top: 5px;
+    appearance: none;
+    min-width: 150px;
+}
+
+label {
+    width: 100%;
+    font-size: 12px;
+}
+
+input:focus-visible,
+input:focus{
+    border-color: rgba(0, 26, 255, 0.5);
+    box-shadow: 1px 1px 4px #E5E7EB;
+    outline: none;
+}
+
+.formInput {
+    width: 300px;
+    margin: 10px 50px 0px 30px;
+}
+
+.formGroup {
+    justify-content: start;
+    margin-bottom: 25px;
+}
+
+:invalid{
+    border-color: rgba(255, 0, 0, 0.5);
+    outline: none;
 }

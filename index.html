@@ -8,6 +8,56 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div>Test Text</div>
+    <div class="flex">
+        <div class="sidebar flex">
+            <div class="flex logo">
+                <img src="./images/odin-lined.png" alt="Outlined depiction of Odin, the Norse god">
+                <div class="title">ODIN</div>
+            </div>
+            <div class="photocred">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></div>
+        </div>
+        <div class="content">
+            <p class="intropara">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.Sign up <em>now</em> to get started.<br/><br/> You <em>know</em> you want to.</p>
+            <form id="form">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <div class="flex formGroup">
+                        <div>
+                            <div class="formInput">
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" name="fname" id="fname">
+                            </div>
+                            <div class="formInput">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="formInput">
+                                <label for="pass"> PASSWORD</label>
+                                <input type="password" name="pass" id="pass">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="formInput">
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" name="lname" id="lname">
+                            </div>
+                            <div class="formInput">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="formInput">
+                                <label for="passconf">CONFRIM PASSWORD</label>
+                                <input type="password" name="passconf" id="passconf">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="account">
+                <button type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a class="login" href="https://google.com">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
